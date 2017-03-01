@@ -867,6 +867,12 @@ body.show-menu #left-nav {
 }
 .jquery {
   background: #9b59b6;
+  	width: 40%;
+  	-moz-animation: jquery 2s ease;
+  	-webkit-animation: jquery 2s ease;
+}
+.java-script {
+  background: black;
   	width: 30%;
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
@@ -892,7 +898,7 @@ body.show-menu #left-nav {
 }
 @-moz-keyframes jquery {
   0%   { width: 0px;  }
-  100% { width: 30%;  }
+  100% { width: 40%;  }
 }
 @-webkit-keyframes wordpress {
   0%   { width: 0px;  }
@@ -917,7 +923,7 @@ body.show-menu #left-nav {
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   
+
    padding-top: 90px;
    padding-bottom: 60px;
 }
