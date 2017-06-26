@@ -51,8 +51,6 @@ body {
   -o-transition: all .3s;
 }
 
-
-
 /* ------------------------------------------------------------------ */
 /* 2. Preloader CSS */
 /* ------------------------------------------------------------------ */
@@ -382,7 +380,6 @@ ul#nav li a:hover {
   -ms-transition: all .3s;
   -o-transition: all .3s;
 }
-
 
 .show-menu {
   padding-left: 200px;
@@ -849,13 +846,13 @@ body.show-menu #left-nav {
 }
 .wordpress {
   background: #34495e;
-  	width: 50%;
+  	width: 60%;
   	-moz-animation: wordpress 2s ease;
   	-webkit-animation: wordpress 2s ease;
 }
 .css {
   background: #3498db;
-  	width: 60%;
+  	width: 70%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
@@ -886,11 +883,11 @@ body.show-menu #left-nav {
 
 @-moz-keyframes wordpress {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 60%;  }
 }
 @-moz-keyframes css {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 70%;  }
 }
 @-moz-keyframes html5 {
   0%   { width: 0px;  }
@@ -902,11 +899,11 @@ body.show-menu #left-nav {
 }
 @-webkit-keyframes wordpress {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 60%;  }
 }
 @-webkit-keyframes css {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 70%;  }
 }
 @-webkit-keyframes html5 {
   0%   { width: 0px;  }
