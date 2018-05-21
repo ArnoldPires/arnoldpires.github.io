@@ -47,11 +47,17 @@
      * as the event label. Setting the transport method to 'beacon' lets the hit be sent
      * using 'navigator.sendBeacon' in browser that support it.
      */
-     var trackOutboundLink = function(url) {
-       ga('send', 'event', 'outbound', 'click', url, {
-         'transport': 'beacon',
-         'hitCallback': function(){document.location = url;}
-       });
+     var trackOutboundLink = function (event_category, event_label, url) {
+       if (ga.q) {
+         //GA  blocked
+         document.location = url;
+       } else {
+         ga ("send", "event", event_category, event_label, url, ("hitCallback":
+                  function () {
+                    document.location = url;
+                  }
+                ));
+       }
      }
      </script>
       <nav id="left-nav">
@@ -118,7 +124,7 @@
           <div class="row">
             <div class="six columns download">
                 <p>
-                  <a href="https://docs.google.com/document/d/18G-MUNzP_msl3AKcFYt9nNS0rjDqzg-xCAYGFAlKOkE/" onClick=”_gaq.push([‘_trackEvent’, ‘outbound’, ‘click’, ‘resume’, ‘1’]);”> <target="_blank" class="button"><i class="fa fa-download"></i>View Full Resume</a>
+                  <a href="https://docs.google.com/document/d/18G-MUNzP_msl3AKcFYt9nNS0rjDqzg-xCAYGFAlKOkE/" onClick="trackOutboundLink ('https://docs.google.com/document/d/18G-MUNzP_msl3AKcFYt9nNS0rjDqzg-xCAYGFAlKOkE/'); return false;"><target="_blank" class="button"><i class="fa fa-download"></i>View Full Resume</a>
                 </p>
             </div>
       </div>
