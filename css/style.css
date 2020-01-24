@@ -152,6 +152,8 @@ header .banner-text h3 {
    color: #FEFEFE;
    margin: 0 auto;
    width: 70%;
+   text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+   font-weight: bold;
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
@@ -572,7 +574,6 @@ body.show-menu #left-nav {
 .education, .work, .skill, awards {
    margin-bottom: 48px;
    padding-bottom: 24px;
-   border-bottom: 1px solid #E8E8E8;
 }
 #resume .info {
    font: 16px/24px 'Raleway', serif;
@@ -954,6 +955,9 @@ body.show-menu #left-nav {
 	text-transform: uppercase;
    letter-spacing: 3px;
    cursor: pointer;
+}
+.modal-01  img {
+  background-color: #85cdae;
 }
 .popup-modal a:hover {	color: #00CCCC; }
 .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
