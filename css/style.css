@@ -1041,7 +1041,7 @@ body.show-menu #left-nav {
 #contact a:hover, #contact a:focus { color: #fff; }
 #contact h1 {
    color: white;
-   border-color: #blue;
+   border-color: blue;
    margin-bottom: 50px;
  }
 #contact h1:hover {
@@ -1050,7 +1050,7 @@ body.show-menu #left-nav {
 #contact h4 {
    font: 16px/24px 'Open Sans', sans-serif;
    font-weight: 700;
-   color: #white;
+   color: white;
    margin-bottom: 6px;
 }
 #contact p.lead {
