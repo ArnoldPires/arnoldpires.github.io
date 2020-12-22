@@ -1926,6 +1926,131 @@ input, select, textarea {
 			}
 
 		}
+/*----------------------------------------------*/
+/*	Skill Bars
+/*----------------------------------------------*/
+.bars {
+	width: 95%;
+	float: left;
+	padding: 0;
+	text-align: left;
+}
+.bars .skills {
+  	margin-top: 36px;
+   list-style: none;
+}
+.bars li {
+   position: relative;
+  	margin-bottom: 60px;
+  	background: #bdc3c7;
+  	height: 42px;
+  	border-radius: 3px;
+    overflow: hidden;
+}
+.bars li em {
+  color: #fff;
+  font: 15px/42px "Open Sans",sans-serif;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+.bar-expand {
+   position: absolute;
+   left: 0;
+   top: 0;
+   margin: 0;
+   padding-right: 24px;
+  	background: #34495e;
+   display: inline-block;
+  	height: 42px;
+   line-height: 42px;
+   border-radius: 3px 0 0 3px;
+}
+.Front-End-Web-Development {
+  background: #34495e;
+  	width: 70%;
+  	-moz-animation: Front-End-Web-Development 2s ease;
+  	-webkit-animation: Front-End-Web-Development 2s ease;
+}
+.Back-End-Web-Development {
+  background: #3498db;
+  	width: 50%;
+  	-moz-animation: Back-End-Web-Development 2s ease;
+  	-webkit-animation: Back-End-Web-Development 2s ease;
+}
+.Virtual-Reality {
+  background: #d35400;
+  	width: 70%;
+  	-moz-animation: Virtual-Reality 2s ease;
+  	-webkit-animation: Virtual-Reality 2s ease;
+}
+.Augmented-Reality {
+  background: #9b59b6;
+  	width: 50%;
+  	-moz-animation: Augmented-Reality 2s ease;
+  	-webkit-animation: Augmented-Reality 2s ease;
+}
+.IT-Professional {
+  background: black;
+  	width: 90%;
+  	-moz-animation: IT-Professional 2s ease;
+  	-webkit-animation: IT-Professional 2s ease;
+}
+.Problem-Solver {
+  background: #e21717;
+  	width: 100%;
+  	-moz-animation: Problem-Solver 2s ease;
+  	-webkit-animation: Problem-Solver 2s ease;
+}
+@-moz-keyframes Front-End-Web-Development {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
+@-webkit-keyframes Front-End-Web-Development {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
+@-moz-keyframes Back-End-Web-Development {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
+}
+@-webkit-keyframes Back-End-Web-Development {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
+}
+@-moz-keyframes Virtual-Reality {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
+@-webkit-keyframes Virtual-Reality {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
+@-moz-keyframes Augmented-Reality {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
+}
+@-webkit-keyframes Augmented-Reality {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
+}
+@-moz-keyframes IT-Professional {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+@-webkit-keyframes IT-Professional {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+@-moz-keyframes Problem-Solver {
+  0%   { width: 0px;  }
+  100% { width: 100%;  }
+}
+@-webkit-keyframes Problem-Solver {
+  0%   { width: 0px;  }
+  100% { width: 100%;  }
+}
 
 /* Main */
 
@@ -1974,6 +2099,23 @@ input, select, textarea {
 
 			#intro p {
 				text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+			}
+			.resume {
+				background-color: #004effd1;
+				width: 12rem;
+				margin: 0 auto;
+				border-radius: 15px;
+				display: flex;
+  				justify-content: center;
+				align-items: center;
+				height: 3rem;
+			}
+			.resume a {
+				font-weight: bold;
+				text-decoration: none;
+			}
+			.resume:hover {
+				background-color: #9ac8e9;
 			}
 
 			.main.style1 > .content {
