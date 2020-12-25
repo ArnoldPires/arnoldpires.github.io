@@ -944,6 +944,7 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
+		
 
 /* Image */
 
@@ -966,24 +967,76 @@ input, select, textarea {
 			display: block;
 			width: 100%;
 			height: 15rem;
-			border: black 5px solid;
+			border: #eee 5px solid;
 			transition: transform .1s;
 		}
-		
-		.overlay {
 
+
+
+		.hoverG span {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+  			color: white;
+  			bottom: 25%;
+  			font-size: 90%;
+  			font-weight: bold;
+  			background: #88bc82cc;
+  			visibility: hidden;
+  			z-index: 5;
 		}
-		.hover:hover {
-			-ms-transform: scale(1.2); /* IE 9 */
-  			-webkit-transform: scale(1.2); /* Safari 3-8 */
-			transform: scale(1.2);
-			-webkit-filter: brightness(60%);
- 			-webkit-transition: all 0.2s ease;
-			-moz-transition: all 0.2s ease;
-			-o-transition: all 0.2s ease;
-			-ms-transition: all 0.2s ease;
-			transition: all 0.2s ease; 
+
+		.hoverG:hover span {
+			visibility: visible;
+  			z-index: 1;
 		}
+
+		.hoverB span {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+  			color: white;
+  			bottom: 25%;
+  			font-size: 90%;
+  			font-weight: bold;
+  			background: #004eff91;
+  			visibility: hidden;
+  			z-index: 5;
+		}
+		
+
+		.hoverB:hover span {
+			visibility: visible;
+  			z-index: 1;
+		}
+
+		.hoverR span {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+  			color: white;
+  			bottom: 25%;
+  			font-size: 90%;
+  			font-weight: bold;
+  			background: #e21717a6;
+  			visibility: hidden;
+  			z-index: 5;
+		}
+
+		.hoverR:hover span {
+			visibility: visible;
+  			z-index: 1;
+		}
+
 		.image.featured {
 			display: block;
 			width: 100%;
@@ -1970,38 +2023,38 @@ input, select, textarea {
 .Front-End-Web-Development {
   background: #34495e;
   	width: 70%;
-  	-moz-animation: Front-End-Web-Development 2s ease;
-  	-webkit-animation: Front-End-Web-Development 2s ease;
+  	-moz-animation: Front-End-Web-Development 15s ease;
+  	-webkit-animation: Front-End-Web-Development 15s ease;
 }
 .Back-End-Web-Development {
   background: #3498db;
   	width: 50%;
-  	-moz-animation: Back-End-Web-Development 2s ease;
-  	-webkit-animation: Back-End-Web-Development 2s ease;
+  	-moz-animation: Back-End-Web-Development 15s ease;
+  	-webkit-animation: Back-End-Web-Development 15s ease;
 }
 .Virtual-Reality {
   background: #d35400;
   	width: 70%;
-  	-moz-animation: Virtual-Reality 2s ease;
-  	-webkit-animation: Virtual-Reality 2s ease;
+  	-moz-animation: Virtual-Reality 15s ease;
+  	-webkit-animation: Virtual-Reality 15s ease;
 }
 .Augmented-Reality {
   background: #9b59b6;
   	width: 50%;
-  	-moz-animation: Augmented-Reality 2s ease;
-  	-webkit-animation: Augmented-Reality 2s ease;
+  	-moz-animation: Augmented-Reality 15s ease;
+  	-webkit-animation: Augmented-Reality 15s ease;
 }
 .IT-Professional {
   background: black;
   	width: 90%;
-  	-moz-animation: IT-Professional 2s ease;
-  	-webkit-animation: IT-Professional 2s ease;
+  	-moz-animation: IT-Professional 15s ease;
+  	-webkit-animation: IT-Professional 15s ease;
 }
 .Problem-Solver {
   background: #e21717;
   	width: 100%;
-  	-moz-animation: Problem-Solver 2s ease;
-  	-webkit-animation: Problem-Solver 2s ease;
+  	-moz-animation: Problem-Solver 15s ease;
+  	-webkit-animation: Problem-Solver 15s ease;
 }
 @-moz-keyframes Front-End-Web-Development {
   0%   { width: 0px;  }
