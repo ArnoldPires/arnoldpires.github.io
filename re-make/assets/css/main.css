@@ -971,9 +971,14 @@ input, select, textarea {
 			transition: transform .1s;
 		}
 
+		.hover p {
+			position: relative;
+			top: 10rem;
+			margin: 0;
+			text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+		}
 
-
-		.hoverG span {
+		.hover {
 			content: '';
 			position: absolute;
 			left: 0;
@@ -984,58 +989,31 @@ input, select, textarea {
   			bottom: 25%;
   			font-size: 90%;
   			font-weight: bold;
-  			background: #88bc82cc;
-  			visibility: hidden;
+  			background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4) );
   			z-index: 5;
 		}
 
-		.hoverG:hover span {
+		.cat1 {
+			color: #3498db;
+		}
+
+		.cat2 {
+			color: #ff3a3a;
+		}
+
+		.cat3 {
+			color: #1aff00;
+		}
+		.cat:hover {
 			visibility: visible;
+			z-index: 1;
+		}
+
+		.hover:hover  {
+			background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0) );
   			z-index: 1;
 		}
 
-		.hoverB span {
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-  			color: white;
-  			bottom: 25%;
-  			font-size: 90%;
-  			font-weight: bold;
-  			background: #004eff91;
-  			visibility: hidden;
-  			z-index: 5;
-		}
-		
-
-		.hoverB:hover span {
-			visibility: visible;
-  			z-index: 1;
-		}
-
-		.hoverR span {
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-  			color: white;
-  			bottom: 25%;
-  			font-size: 90%;
-  			font-weight: bold;
-  			background: #e21717a6;
-  			visibility: hidden;
-  			z-index: 5;
-		}
-
-		.hoverR:hover span {
-			visibility: visible;
-  			z-index: 1;
-		}
 
 		.image.featured {
 			display: block;
@@ -2523,6 +2501,10 @@ input, select, textarea {
 
 			#contact .box {
 				padding: 1.5em 1.5em 2em 1.5em;
+			}
+
+			.hover p {
+				top: 5rem;
 			}
 
 		}
