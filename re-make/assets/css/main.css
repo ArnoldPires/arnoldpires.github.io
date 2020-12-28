@@ -976,6 +976,8 @@ input, select, textarea {
 			top: 10rem;
 			margin: 0;
 			text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+			background: #0000007d;
+			height: 40px;
 		}
 
 		.hover {
@@ -989,7 +991,6 @@ input, select, textarea {
   			bottom: 25%;
   			font-size: 90%;
   			font-weight: bold;
-  			background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4) );
   			z-index: 5;
 		}
 
@@ -1002,7 +1003,7 @@ input, select, textarea {
 		}
 
 		.cat3 {
-			color: #1aff00;
+			color: #fdf618;
 		}
 		.cat:hover {
 			visibility: visible;
@@ -1010,10 +1011,8 @@ input, select, textarea {
 		}
 
 		.hover:hover  {
-			background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0) );
   			z-index: 1;
 		}
-
 
 		.image.featured {
 			display: block;
@@ -1980,7 +1979,7 @@ input, select, textarea {
 }
 .bars li em {
   color: #fff;
-  font: 15px/42px "Open Sans",sans-serif;
+  font: 13px/42px "Open Sans",sans-serif;
   letter-spacing: 2px;
   padding-left: 20px;
   position: relative;
@@ -2504,7 +2503,8 @@ input, select, textarea {
 			}
 
 			.hover p {
-				top: 5rem;
+				top: 7rem;
+				height: 24px;
 			}
 
 		}
